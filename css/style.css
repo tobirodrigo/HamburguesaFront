@@ -484,6 +484,7 @@ section {
   color: #eacf4f;
 }
 
+
 /*Menu*/
 .titlehb-img {
   display: flex;
@@ -783,6 +784,10 @@ section {
   margin: 0.7rem 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .formu .bmw {
   display: inline-block;
   margin-top: 1rem;
@@ -796,6 +801,73 @@ section {
 .formu .bmw:hover {
   color: #000;
   background: #aaa;
+}
+
+.sucurs {
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1,
+.header h2 {
+  margin: 10px 0;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.box {
+  background-color: #123142;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 300px;
+  margin: 10px;
+  transition: transform 0.3s;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #fff;
+}
+
+.contenido {
+  padding: 20px;
+}
+
+.bmw {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #123142;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.bmw:hover {
+  background-color: #123142;
+}
+
+#sucurs .subidon {
+  font-size: 100px;
+  color: #fff;
 }
 
 @media (max-width: 768px) {
@@ -833,7 +905,13 @@ section {
     width: 100%;
     padding: 20px;
   }
+
+  #sucurs .subidon {
+    font-size: 50px;
+    color: #fff;
+  }
 }
+
 /* Animaciones */
 @keyframes muestraMenu {
   from {
@@ -922,9 +1000,14 @@ section {
   }
   .servicio {
     display: grid;
+    justify-content: center;
   }
   .pedidos .row-pedidos .marino .icons-container {
     display: grid;
+  }
+  #sucurs .subidon {
+    font-size: 50px;
+    color: #fff;
   }
   .sucurs .box-container {
     display: grid;
@@ -941,6 +1024,10 @@ section {
   }
   #menu-bmw {
     display: inline-block;
+  }
+
+  #sucursales {
+   display: grid;
   }
   .navbar {
     position: absolute;
