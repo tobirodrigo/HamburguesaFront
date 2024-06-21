@@ -167,8 +167,9 @@ section {
 }
 
 .servicio {
-  display: grid;
+  display: flex;
   gap: 2rem;
+  justify-content: center;
 }
 .servicio .box {
   text-align: center;
@@ -910,6 +911,31 @@ a {
     font-size: 50px;
     color: #fff;
   }
+
+  .servicio {
+    display: grid;
+  }
+
+  .contacto .row .marino .icons-container {
+    display: grid;
+    justify-content: center;
+  }
+
+  .contacto .row .marino form .box {
+    display: grid;
+    place-items: center;
+  }
+
+  .pedidos .row-pedidos .marino form {
+    text-align: center;
+    display: grid;
+    padding: 30%; 
+}
+
+.pedidos .row-pedidos .marino .icons-container {
+  display: grid;
+  margin-right: 10%;
+}
 }
 
 /* Animaciones */
